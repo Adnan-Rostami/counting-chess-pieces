@@ -16,9 +16,12 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 from __future__ import print_function
-
-import os
 import numpy as np
+from ultralytics import YOLO
+import cv2
+import time
+import math
+import os
 import matplotlib
 
 matplotlib.use('TkAgg')
@@ -343,14 +346,7 @@ def parse_args():
 
 
 
-import numpy as np
-from tqdm.notebook import tqdm
-import tensorflow as tf
-import numpy as np
-from ultralytics import YOLO
-import cv2
-import time
-import math
+
 
 video = cv2.VideoCapture("chess.mp4")  # For Video
 
